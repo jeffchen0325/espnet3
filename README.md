@@ -12,7 +12,7 @@ espnetx
 
 ## 安装
 
-1.  （可选）如果是windows系统，安装WSL2+Ubuntu-22.04
+1.  （可选）如果是windows系统，安装 WSL2 + Ubuntu-22.04
 
     管理员身份打开PowerShell，启用虚拟机平台和WSL功能：
     ```bash
@@ -21,7 +21,7 @@ espnetx
     ```
     安装成功后重启电脑，再次以管理员身份打开PS，输入：
     ```bash
-    $ wsl --install						# 安装最新版本WSL
+    $ wsl --install						    # 安装最新版本WSL
     $ wsl --list --online					# 列出可用的发行版版本
     $ wsl --install -d Ubuntu-22.04 --location D:\WSL\Ubuntu-22.04		# 下载安装注册启动
     ```
@@ -55,7 +55,7 @@ espnetx
     ```bash
     $ conda create -n espnet python=3.10
     $ conda activate espnet
-    $ conda install -c conda-forge uv -y
+    $ conda install -c conda-forge uv -y    # 安装 uv 用于后续包安装
     ```
     安装torch+cuda（选取合适的pytorch+cuda版本， 例如5060ti至少cuda12.8支持sm120）
     ```bash
