@@ -43,7 +43,7 @@ class DefaultConfigs:
     inference_config: str = "conf/inference.yaml"
     metrics_config: str = "conf/metrics.yaml"
     publication_config: str = "conf/publication.yaml"
-    dry_run: bool = True
+    dry_run: bool = False
     extra_args: Dict[str, Any] = field(default_factory=dict)
 
 def main(

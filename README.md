@@ -1,6 +1,6 @@
 espnetx
 
-独立的 ESPnetX 框架。本项目基于 [ESPnet](https://espnet.github.io/espnet/)，旨在提供一个更轻量、更现代化的语音处理库。
+独立的 ESPnet3 框架。本项目基于 [ESPnet](https://espnet.github.io/espnet/)，旨在提供一个更轻量、更现代化的语音处理库。
 
 ## 简介
 
@@ -13,6 +13,7 @@ espnetx
 ## 安装
 
 1.  （可选）如果是windows系统，安装WSL2+Ubuntu-22.04
+
     管理员身份打开PowerShell，启用虚拟机平台和WSL功能：
     ```bash
     $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -34,6 +35,7 @@ espnetx
     关掉wsl再重启即生效
 
 2.  Ubuntu环境安装
+
     (可选)建议在Ubuntu环境安装ffmpeg cmake sox flac
     ```bash
     $ sudo apt update 
@@ -48,6 +50,7 @@ espnetx
     $ source ~/.bashrc
     ```
 3.  conda激活虚拟环境
+
     创建虚拟环境并激活
     ```bash
     $ conda create -n espnet python=3.10
@@ -58,15 +61,16 @@ espnetx
     ```bash
     $ uv pip install torch==2.9.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128
     ```
-4.  安装ESPnetX
+4.  安装ESPnet3
+
     克隆仓库：
     ```bash
     $ cd ~
-    $ git clone https://github.com/jeffchen0325/espnetx.git
+    $ git clone https://github.com/jeffchen0325/espnet3.git
     ```
-    安装ESPnetX
+    安装ESPnet3
     ```bash
-    $ cd <ESPnetX-root>
+    $ cd <ESPnet3-root>
     $ uv pip install -e .
     ```
     检查ESPnet版本
@@ -75,8 +79,8 @@ espnetx
     ```
     或
     ```bash
-    $ cd <ESPnetX-root>/tools
-    $ bash -c ". ./activate_python.sh; . ./extra_path.sh; python3 check_install.py" 
+    $ cd <ESPnet3-root>/tools
+    $ python3 check_install.py
     ```
 
 ## 🚀 快速开始
@@ -84,5 +88,5 @@ espnetx
 以下是一个简单的示例，展示如何运行一个基础的 ASR 实验：
 ```bash
 $ cd espnetx/egs3/mini_an4/asr
-$ python run.py
+$ python3 run.py
 ```
