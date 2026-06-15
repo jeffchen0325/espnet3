@@ -6,7 +6,7 @@ espnetx
 
 本项目从官方 ESPnet 仓库中提取了 `egs3`和`espnet3` 模块，并进行了独立打包。它移除了对旧版本代码的依赖，专注于提供简洁、高效的语音识别（ASR）、语音合成（TTS）等任务的训练和推理流程。
 
-本项目内嵌了 espnet_model_zoo 的源代码以简洁包依赖 。
+本项目内嵌了 espnet_model_zoo 的源代码（放入espnet3/espnet3/model_zoo）以简洁包依赖 。
 
 本项目准备内嵌 espnet-tts-frontend 简洁包依赖（ongoing） 。
 
@@ -75,7 +75,7 @@ espnetx
     ```
     检查ESPnet版本
     ```bash
-    $ uv pip show espnet
+    $ uv pip show espnet3
     ```
     或
     ```bash
@@ -87,6 +87,6 @@ espnetx
 
 以下是一个简单的示例，展示如何运行一个基础的 ASR 实验：
 ```bash
-$ cd espnetx/egs3/mini_an4/asr
-$ python3 run.py
+$ cd espnet3/egs3/mini_an4/asr
+$ python3 run.py dry_run=True
 ```
