@@ -71,7 +71,7 @@ espnetx
     安装ESPnet3
     ```bash
     $ cd <ESPnet3-root>
-    $ uv pip install -e .
+    $ uv pip install -e .[all]    
     ```
     检查ESPnet版本
     ```bash
@@ -87,6 +87,7 @@ espnetx
 
 以下是一个简单的示例，展示如何运行一个基础的 ASR 实验：
 ```bash
+$ bash ~/espnet3/tools/installers/install_warp-transducer.sh    # ASR模型依赖
 $ cd espnet3/egs3/mini_an4/asr
 $ python3 run.py dry_run=True
 ```
