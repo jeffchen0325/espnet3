@@ -253,7 +253,7 @@ class AbsTask(ABC):
         >>> cls.check_task_requirements()
         If your model is defined as following,
 
-        >>> from espnet3.train.abs_espnet_model import AbsESPnetModel
+        >>> from espnet3.models.abs_espnet_model import AbsESPnetModel
         >>> class Model(AbsESPnetModel):
         ...     def forward(self, input, output, opt=None):  pass
 
@@ -274,7 +274,7 @@ class AbsTask(ABC):
         >>> cls.check_task_requirements()
         If your model is defined as follows,
 
-        >>> from espnet3.train.abs_espnet_model import AbsESPnetModel
+        >>> from espnet3.models.abs_espnet_model import AbsESPnetModel
         >>> class Model(AbsESPnetModel):
         ...     def forward(self, input, output, opt=None):  pass
 
