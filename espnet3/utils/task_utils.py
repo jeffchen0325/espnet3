@@ -3,14 +3,28 @@
 import sys
 from argparse import Namespace
 from pathlib import Path
-from typing import Dict, Union
+from typing import TYPE_CHECKING, Dict, Union
+from contextlib import contextmanager
 
 from hydra.utils import get_class
 from omegaconf import DictConfig, OmegaConf
 from typeguard import typechecked
 
-from espnet3.train.abs_espnet_model import AbsESPnetModel
 from espnet3.utils.yaml_no_alias_safe_dump import yaml_no_alias_safe_dump
+
+if TYPE_CHECKING:
+    from espnet3.train.abs_espnet_model import AbsESPnetModel
+
+
+@contextmanager
+def _dummy_argv():
+    """Temporarily replace sys.argv for ESPnet config initialization."""
+    original_argv = sys.argv
+    sys.argv = ["dummy.py"]
+    try:
+        yield
+    finally:
+        sys.argv = original_argv
 
 
 def get_task_class(task_path: str):
@@ -23,17 +37,13 @@ def get_task_class(task_path: str):
 
 
 @typechecked
-def get_espnet_model(task: str, config: Union[Dict, DictConfig]) -> AbsESPnetModel:
+def get_espnet_model(task: str, config: Union[Dict, DictConfig]) -> "AbsESPnetModel":
     """Build and return an ESPnet model from the given task and config."""
     ez_task = get_task_class(task)
 
     # workaround for calling get_default_config
-    original_argv = sys.argv
-    sys.argv = ["dummy.py"]
-    try:
+    with _dummy_argv():
         default_config = ez_task.get_default_config()
-    finally:
-        sys.argv = original_argv
 
     if OmegaConf.is_config(config):
         default_config.update(OmegaConf.to_container(config, resolve=True))
@@ -51,10 +61,8 @@ def save_espnet_config(
     ez_task = get_task_class(task)
 
     # workaround for calling get_default_config
-    original_argv = sys.argv
-    sys.argv = ["dummy.py"]
-    default_config = ez_task.get_default_config()
-    sys.argv = original_argv
+    with _dummy_argv():
+        default_config = ez_task.get_default_config()
 
     resolved_config = (
         OmegaConf.to_container(config, resolve=True)
