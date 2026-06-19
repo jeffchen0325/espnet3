@@ -25,9 +25,9 @@ from espnet3.legacy.nets.scorers.length_bonus import LengthBonus
 from espnet3.legacy.utils.cli_utils import get_commandline_args
 from espnet3.tasks.lm import LMTask
 from espnet3.tasks.s2t_ctc import S2TTask
-from espnet3.text.build_tokenizer import build_tokenizer
-from espnet3.text.token_id_converter import TokenIDConverter
-from espnet3.text.whisper_token_id_converter import OpenAIWhisperTokenIDConverter
+from espnet3.tokenizers.build_tokenizer import build_tokenizer
+from espnet3.tokenizers.token_id_converter import TokenIDConverter
+from espnet3.tokenizers.whisper_token_id_converter import OpenAIWhisperTokenIDConverter
 from espnet3.torch_utils.device_funcs import to_device
 from espnet3.torch_utils.set_all_random_seed import set_all_random_seed
 from espnet3.utils import config_argparse

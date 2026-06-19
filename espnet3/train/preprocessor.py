@@ -14,13 +14,13 @@ import soundfile
 from typeguard import typechecked
 
 from espnet3.layers.augmentation import DataAugmentation
-from espnet3.text.build_tokenizer import build_tokenizer
-from espnet3.text.cleaner import TextCleaner
-from espnet3.text.hugging_face_token_id_converter import HuggingFaceTokenIDConverter
-from espnet3.text.qwen2audio_tokenizer import Qwen2AudioTokenizer
-from espnet3.text.token_id_converter import TokenIDConverter
-from espnet3.text.whisper_token_id_converter import OpenAIWhisperTokenIDConverter
-from espnet3.text.whisper_tokenizer import OpenAIWhisperTokenizer
+from espnet3.tokenizers.build_tokenizer import build_tokenizer
+from espnet3.tokenizers.cleaner import TextCleaner
+from espnet3.tokenizers.hugging_face_token_id_converter import HuggingFaceTokenIDConverter
+from espnet3.tokenizers.qwen2audio_tokenizer import Qwen2AudioTokenizer
+from espnet3.tokenizers.token_id_converter import TokenIDConverter
+from espnet3.tokenizers.whisper_token_id_converter import OpenAIWhisperTokenIDConverter
+from espnet3.tokenizers.whisper_tokenizer import OpenAIWhisperTokenizer
 
 
 class AbsPreprocessor(ABC):

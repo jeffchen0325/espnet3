@@ -64,7 +64,7 @@ from espnet3.models.s2st.tgt_feats_extract.linear_spectrogram import LinearSpect
 from espnet3.models.s2st.tgt_feats_extract.log_mel_fbank import LogMelFbank
 from espnet3.models.s2st.tgt_feats_extract.log_spectrogram import LogSpectrogram
 from espnet3.tasks.st import STTask
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn

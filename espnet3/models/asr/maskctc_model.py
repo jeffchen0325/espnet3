@@ -22,7 +22,7 @@ from espnet3.legacy.nets.pytorch_backend.nets_utils import th_accuracy
 from espnet3.legacy.nets.pytorch_backend.transformer.label_smoothing_loss import (
     LabelSmoothingLoss,
 )
-from espnet3.text.token_id_converter import TokenIDConverter
+from espnet3.tokenizers.token_id_converter import TokenIDConverter
 from espnet3.torch_utils.device_funcs import force_gatherable
 
 

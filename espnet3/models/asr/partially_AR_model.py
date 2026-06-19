@@ -18,7 +18,7 @@ from espnet3.legacy.nets.scorer_interface import (
     MaskParallelScorerInterface,
     ScorerInterface,
 )
-from espnet3.text.token_id_converter import TokenIDConverter
+from espnet3.tokenizers.token_id_converter import TokenIDConverter
 
 warnings.filterwarnings("ignore", category=UserWarning)
 

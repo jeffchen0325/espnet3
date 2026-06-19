@@ -13,7 +13,7 @@ from espnet3.models.lm.huggingface_pretrained_opt_lm import HuggingfaceOPTModel
 from espnet3.models.lm.seq_rnn_lm import SequentialRNNLM
 from espnet3.models.lm.transformer_lm import TransformerLM
 from espnet3.tasks.abs_task import AbsTask
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
 from espnet3.train.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices

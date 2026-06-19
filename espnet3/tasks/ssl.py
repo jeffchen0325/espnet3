@@ -33,7 +33,7 @@ from espnet3.models.ssl.loss.abs_loss import AbsSSLLoss
 from espnet3.models.ssl.loss.hubert import HuBERTLoss
 from espnet3.models.ssl.utils.mask import Masking
 from espnet3.tasks.abs_task import AbsTask
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
 from espnet3.train.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices

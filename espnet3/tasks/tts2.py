@@ -19,7 +19,7 @@ from espnet3.tasks.tts import (
     pitch_extractor_choices,
     pitch_normalize_choices,
 )
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.preprocessor import CommonPreprocessor

@@ -16,7 +16,7 @@ from espnet3.models.gan_tts.vits import VITS
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.layers.global_mvn import GlobalMVN
 from espnet3.tasks.abs_task import AbsTask
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.preprocessor import CommonPreprocessor

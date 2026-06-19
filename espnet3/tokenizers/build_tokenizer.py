@@ -3,14 +3,14 @@ from typing import Dict, Iterable, Optional, Union
 
 from typeguard import typechecked
 
-from espnet3.text.abs_tokenizer import AbsTokenizer
-from espnet3.text.char_tokenizer import CharTokenizer
-from espnet3.text.hugging_face_tokenizer import HuggingFaceTokenizer
-from espnet3.text.phoneme_tokenizer import PhonemeTokenizer
-from espnet3.text.qwen2audio_tokenizer import Qwen2AudioTokenizer
-from espnet3.text.sentencepiece_tokenizer import SentencepiecesTokenizer
-from espnet3.text.whisper_tokenizer import OpenAIWhisperTokenizer
-from espnet3.text.word_tokenizer import WordTokenizer
+from espnet3.tokenizers.abs_tokenizer import AbsTokenizer
+from espnet3.tokenizers.char_tokenizer import CharTokenizer
+from espnet3.tokenizers.hugging_face_tokenizer import HuggingFaceTokenizer
+from espnet3.tokenizers.phoneme_tokenizer import PhonemeTokenizer
+from espnet3.tokenizers.qwen2audio_tokenizer import Qwen2AudioTokenizer
+from espnet3.tokenizers.sentencepiece_tokenizer import SentencepiecesTokenizer
+from espnet3.tokenizers.whisper_tokenizer import OpenAIWhisperTokenizer
+from espnet3.tokenizers.word_tokenizer import WordTokenizer
 
 
 @typechecked

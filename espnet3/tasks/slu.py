@@ -62,7 +62,7 @@ from espnet3.models.slu.postdecoder.hugging_face_transformers_postdecoder import
 from espnet3.models.slu.postencoder.conformer_postencoder import ConformerPostEncoder
 from espnet3.models.slu.postencoder.transformer_postencoder import TransformerPostEncoder
 from espnet3.tasks.asr import ASRTask
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
 from espnet3.train.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices

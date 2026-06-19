@@ -4,7 +4,7 @@ from typing import Iterable, List, Optional
 
 from typeguard import typechecked
 
-from espnet3.text.abs_tokenizer import AbsTokenizer
+from espnet3.tokenizers.abs_tokenizer import AbsTokenizer
 
 LANGUAGES_CODE_MAPPING = {
     "noinfo": "english",  # default, English

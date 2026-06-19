@@ -40,7 +40,7 @@ from espnet3.tasks.st import extra_asr_decoder_choices as st_extra_asr_decoder_c
 from espnet3.tasks.st import extra_mt_decoder_choices as st_extra_mt_decoder_choices_
 from espnet3.tasks.st import postencoder_choices as st_postencoder_choices_
 from espnet3.tasks.st import preencoder_choices as st_preencoder_choices_
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.preprocessor import (

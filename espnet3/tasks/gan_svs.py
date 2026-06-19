@@ -27,7 +27,7 @@ from espnet3.models.svs.feats_extract.score_feats_extract import (
     SyllableScoreFeats,
 )
 from espnet3.tasks.abs_task import AbsTask, optim_classes
-from espnet3.text.phoneme_tokenizer import g2p_choices
+from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.gan_trainer import GANTrainer

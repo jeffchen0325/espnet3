@@ -9,7 +9,7 @@ from typing import Optional
 from typeguard import typechecked
 
 from espnet3.legacy.utils.cli_utils import get_commandline_args
-from espnet3.text.whisper_tokenizer import LANGUAGES_CODE_MAPPING
+from espnet3.tokenizers.whisper_tokenizer import LANGUAGES_CODE_MAPPING
 from espnet3.utils.types import str2bool
 
 dirname = os.path.dirname(__file__)

@@ -16,7 +16,7 @@ try:
 except ImportError:
     vietnamese_cleaners = None
 
-from espnet3.text.korean_cleaner import KoreanCleaner
+from espnet3.tokenizers.korean_cleaner import KoreanCleaner
 
 try:
     from whisper.normalizers import BasicTextNormalizer, EnglishTextNormalizer

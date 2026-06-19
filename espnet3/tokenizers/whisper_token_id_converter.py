@@ -5,7 +5,7 @@ from typing import Iterable, List, Optional, Union
 import numpy as np
 from typeguard import typechecked
 
-from espnet3.text.whisper_tokenizer import LANGUAGES_CODE_MAPPING
+from espnet3.tokenizers.whisper_tokenizer import LANGUAGES_CODE_MAPPING
 
 dirname = os.path.dirname(__file__)
 # <sos> and <eos> for Whisper multilingual ---

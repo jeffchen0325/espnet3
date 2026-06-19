@@ -5,7 +5,7 @@ import numpy as np
 from packaging.version import Version
 from typeguard import typechecked
 
-from espnet3.text.abs_tokenizer import AbsTokenizer
+from espnet3.tokenizers.abs_tokenizer import AbsTokenizer
 
 try:
     from transformers import AutoProcessor
