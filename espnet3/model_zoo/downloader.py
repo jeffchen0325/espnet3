@@ -6,11 +6,7 @@ from pathlib import Path
 import re
 import shutil
 import tempfile
-from typing import Dict
-from typing import List
-from typing import Sequence
-from typing import Tuple
-from typing import Union
+from typing import Dict, List, Sequence, Tuple, Union
 import warnings
 
 from filelock import FileLock
@@ -20,9 +16,9 @@ import requests
 from tqdm import tqdm
 import yaml
 
-from espnet3.main_funcs.pack_funcs import find_path_and_change_it_recursive
-from espnet3.main_funcs.pack_funcs import get_dict_from_cache
-from espnet3.main_funcs.pack_funcs import unpack
+from espnet3.utils.pack_funcs import find_path_and_change_it_recursive
+from espnet3.utils.pack_funcs import get_dict_from_cache
+from espnet3.utils.pack_funcs import unpack
 
 
 MODELS_URL = (

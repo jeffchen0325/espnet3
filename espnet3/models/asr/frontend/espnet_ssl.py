@@ -56,16 +56,7 @@ class ESPnetSSLFrontend(AbsFrontend):
                     device="cpu",
                 )
             else:
-                try:
-                    from espnet_model_zoo.downloader import ModelDownloader
-
-                except ImportError:
-                    logging.error(
-                        "`espnet_model_zoo` is not installed. "
-                        "Please install via `pip install -U espnet_model_zoo`."
-                    )
-                    raise
-
+                from espnet3.model_zoo.downloader import ModelDownloader
                 args = {}
                 d = ModelDownloader()
                 args.update(**d.download_and_unpack(path_or_url))

@@ -23,10 +23,10 @@ from pathlib import Path
 from typing import Any, Mapping, Sequence
 
 import yaml
-from model_zoo.downloader import ModelDownloader
 from hydra.utils import get_class
 from omegaconf import DictConfig, ListConfig, OmegaConf
 
+from espnet3.model_zoo.downloader import ModelDownloader
 from espnet3.systems.base.inference_provider import InferenceProvider
 from espnet3.systems.base.inference_runner import InferenceRunner, _load_output_fn
 from espnet3.utils.config_utils import load_config_with_defaults
@@ -308,7 +308,7 @@ class InferenceModel:
         """Download a packaged model and build an inference model from it.
 
         This is the remote-loading companion to :meth:`from_packed`. It is
-        called when the caller has an ``espnet_model_zoo`` tag rather than a
+        called when the caller has an ``espnet3.model_zoo`` tag rather than a
         local packed directory. The downloader fetches and unpacks the model
         assets first, then this method locates the unpacked bundle root and
         delegates to :meth:`from_packed` for the actual config loading and
@@ -316,7 +316,7 @@ class InferenceModel:
 
         Args:
             model_tag: Pretrained model identifier understood by
-                ``espnet_model_zoo``.
+                ``espnet3.model_zoo``.
             trust_user_code: Forwarded to :meth:`from_packed`.
 
         Returns:

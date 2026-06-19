@@ -152,22 +152,14 @@ class Speech2Language:
 
         Args:
             model_tag (Optional[str]): Model tag of the pretrained models.
-                Currently, the tags of espnet_model_zoo are supported.
+                Currently, the tags of espnet3.model_zoo are supported.
 
         Returns:
             Speech2Language: Speech2Language instance.
 
         """
         if model_tag is not None:
-            try:
-                from espnet_model_zoo.downloader import ModelDownloader
-
-            except ImportError:
-                logging.error(
-                    "`espnet_model_zoo` is not installed. "
-                    "Please install via `pip install -U espnet_model_zoo`."
-                )
-                raise
+            from espnet3.model_zoo.downloader import ModelDownloader
             d = ModelDownloader()
             kwargs.update(**d.download_and_unpack(model_tag))
 

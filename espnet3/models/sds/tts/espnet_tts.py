@@ -37,15 +37,8 @@ class ESPnetTTSModel(AbsTTS):
                 The computation device for running inference.
                 Defaults to "cuda".
 
-        Raises:
-            ImportError:
-                If the required `espnet_model_zoo` library is not installed.
         """
-        try:
-            from espnet_model_zoo.downloader import ModelDownloader
-        except Exception as e:
-            print("Error: espnet_model_zoo is not properly installed.")
-            raise e
+        from espnet3.model_zoo.downloader import ModelDownloader
         super().__init__()
         vocoder_tag = "none"
         self.d = ModelDownloader()
