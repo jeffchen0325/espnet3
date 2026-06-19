@@ -12,7 +12,7 @@ from typeguard import typechecked
 from espnet3.models.gan_tts.abs_gan_tts import AbsGANTTS
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.layers.inversible_interface import InversibleInterface
-from espnet3.train.abs_gan_espnet_model import AbsGANESPnetModel
+from espnet3.models.abs_gan_espnet_model import AbsGANESPnetModel
 from espnet3.models.tts.feats_extract.abs_feats_extract import AbsFeatsExtract
 
 

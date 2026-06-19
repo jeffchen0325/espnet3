@@ -20,7 +20,7 @@ from espnet3.models.enh.separator.dan_separator import DANSeparator
 from espnet3.models.enh.separator.tfgridnetv3_separator import TFGridNetV3
 from espnet3.models.enh.separator.uses_separator import USESSeparator
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 EPS = torch.finfo(torch.get_default_dtype()).eps
 

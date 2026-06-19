@@ -14,7 +14,7 @@ from espnet3.models.sds.tts.chat_tts import ChatTTSModel
 from espnet3.models.sds.tts.espnet_tts import ESPnetTTSModel
 from espnet3.models.sds.utils.chat import Chat
 from espnet3.models.sds.vad.webrtc_vad import WebrtcVADModel
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 try:
     import gradio as gr

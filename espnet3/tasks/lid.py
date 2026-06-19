@@ -41,7 +41,7 @@ from espnet3.models.spk.projector.ska_tdnn_projector import SkaTdnnProjector
 from espnet3.models.spk.projector.xvector_projector import XvectorProjector
 from espnet3.tasks.abs_task import AbsTask
 from espnet3.torch_utils.initialize import initialize
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.lid_trainer import LIDTrainer

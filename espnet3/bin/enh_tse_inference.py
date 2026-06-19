@@ -21,7 +21,7 @@ from espnet3.legacy.utils.cli_utils import get_commandline_args
 from espnet3.tasks.enh_tse import TargetSpeakerExtractionTask as TSETask
 from espnet3.torch_utils.device_funcs import to_device
 from espnet3.torch_utils.set_all_random_seed import set_all_random_seed
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.utils import config_argparse
 from espnet3.utils.types import str2bool, str2triple_str, str_or_none
 

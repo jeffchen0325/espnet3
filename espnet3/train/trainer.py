@@ -34,7 +34,7 @@ from espnet3.torch_utils.add_gradient_noise import add_gradient_noise
 from espnet3.torch_utils.device_funcs import to_device
 from espnet3.torch_utils.recursive_op import recursive_average
 from espnet3.torch_utils.set_all_random_seed import set_all_random_seed
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.distributed_utils import DistributedOption
 from espnet3.train.reporter import Reporter, SubReporter
 from espnet3.utils.build_dataclass import build_dataclass

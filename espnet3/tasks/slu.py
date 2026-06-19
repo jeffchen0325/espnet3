@@ -64,7 +64,7 @@ from espnet3.models.slu.postencoder.transformer_postencoder import TransformerPo
 from espnet3.tasks.asr import ASRTask
 from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.preprocessor import SLUPreprocessor
 from espnet3.train.trainer import Trainer

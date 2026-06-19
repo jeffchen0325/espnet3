@@ -6,7 +6,7 @@ from typeguard import typechecked
 
 from espnet3.legacy.nets.beam_search import BeamSearch
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 from .qwen2_scorer import Qwen2HFScorer
 

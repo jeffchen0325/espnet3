@@ -15,7 +15,7 @@ from espnet3.models.asr_transducer.joint_network import JointNetwork
 from espnet3.models.asr_transducer.utils import get_transducer_task_io
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetASRTransducerModel(AbsESPnetModel):

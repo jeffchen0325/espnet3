@@ -21,7 +21,7 @@ from espnet3.models.hubert.hubert_loss import HubertPretrainLoss
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.legacy.nets.e2e_asr_common import ErrorCalculator
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class TorchAudioHubertPretrainModel(AbsESPnetModel):

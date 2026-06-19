@@ -13,7 +13,7 @@ from espnet3.models.diar.espnet_model import ESPnetDiarizationModel
 from espnet3.models.enh.espnet_model import ESPnetEnhancementModel
 from espnet3.models.st.espnet_model import ESPnetSTModel
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetEnhS2TModel(AbsESPnetModel):

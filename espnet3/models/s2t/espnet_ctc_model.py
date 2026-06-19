@@ -13,7 +13,7 @@ from espnet3.legacy.nets.e2e_asr_common import ErrorCalculator
 from espnet3.legacy.nets.pytorch_backend.nets_utils import make_pad_mask
 from espnet3.legacy.nets.pytorch_backend.transformer.embedding import PositionalEncoding
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetS2TCTCModel(AbsESPnetModel):

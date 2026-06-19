@@ -26,7 +26,7 @@ from espnet3.models.cls.decoder.abs_decoder import AbsDecoder
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.layers.mixup_augmentation import MixupAugment
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 logger = logging.getLogger(__name__)
 

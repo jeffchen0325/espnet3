@@ -24,7 +24,7 @@ from espnet3.models.s2st.losses.abs_loss import AbsS2STLoss
 from espnet3.models.s2st.synthesizer.abs_synthesizer import AbsSynthesizer
 from espnet3.models.s2st.tgt_feats_extract.abs_tgt_feats_extract import AbsTgtFeatsExtract
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetS2STModel(AbsESPnetModel):

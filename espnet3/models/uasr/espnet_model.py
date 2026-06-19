@@ -12,7 +12,7 @@ from espnet3.models.asr.frontend.abs_frontend import AbsFrontend
 from espnet3.legacy.nets.pytorch_backend.nets_utils import make_pad_mask
 from espnet3.tokenizers.token_id_converter import TokenIDConverter
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.models.uasr.discriminator.abs_discriminator import AbsDiscriminator
 from espnet3.models.uasr.generator.abs_generator import AbsGenerator
 from espnet3.models.uasr.loss.abs_loss import AbsUASRLoss

@@ -19,7 +19,7 @@ from espnet3.legacy.nets.pytorch_backend.transformer.label_smoothing_loss import
     LabelSmoothingLoss,
 )
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetS2TModel(AbsESPnetModel):

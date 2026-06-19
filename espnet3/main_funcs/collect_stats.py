@@ -13,7 +13,7 @@ from espnet3.fileio.datadir_writer import DatadirWriter
 from espnet3.fileio.npy_scp import NpyScpWriter
 from espnet3.torch_utils.device_funcs import to_device
 from espnet3.torch_utils.forward_adaptor import ForwardAdaptor
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 @torch.no_grad()

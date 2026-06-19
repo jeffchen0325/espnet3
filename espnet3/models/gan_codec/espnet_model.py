@@ -9,7 +9,7 @@ import torch
 from typeguard import typechecked
 
 from espnet3.models.gan_codec.abs_gan_codec import AbsGANCodec
-from espnet3.train.abs_gan_espnet_model import AbsGANESPnetModel
+from espnet3.models.abs_gan_espnet_model import AbsGANESPnetModel
 
 
 class ESPnetGANCodecModel(AbsGANESPnetModel):

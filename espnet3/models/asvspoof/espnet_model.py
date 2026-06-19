@@ -15,7 +15,7 @@ from espnet3.models.asvspoof.decoder.abs_decoder import AbsDecoder
 from espnet3.models.asvspoof.loss.abs_loss import AbsASVSpoofLoss
 from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetASVSpoofModel(AbsESPnetModel):

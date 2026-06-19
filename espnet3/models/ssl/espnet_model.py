@@ -17,7 +17,7 @@ from espnet3.layers.abs_normalize import AbsNormalize
 from espnet3.legacy.nets.pytorch_backend.nets_utils import make_pad_mask
 from espnet3.models.ssl.loss.abs_loss import AbsSSLLoss
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetSSLModel(AbsESPnetModel):

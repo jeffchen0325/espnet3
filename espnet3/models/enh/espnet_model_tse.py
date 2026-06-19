@@ -13,7 +13,7 @@ from espnet3.models.enh.loss.criterions.tf_domain import FrequencyDomainLoss
 from espnet3.models.enh.loss.criterions.time_domain import TimeDomainLoss
 from espnet3.models.enh.loss.wrappers.abs_wrapper import AbsLossWrapper
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 EPS = torch.finfo(torch.get_default_dtype()).eps
 

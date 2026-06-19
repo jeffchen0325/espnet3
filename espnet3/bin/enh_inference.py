@@ -27,7 +27,7 @@ from espnet3.tasks.enh import EnhancementTask
 from espnet3.tasks.enh_s2t import EnhS2TTask
 from espnet3.torch_utils.device_funcs import to_device
 from espnet3.torch_utils.set_all_random_seed import set_all_random_seed
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.utils import config_argparse
 from espnet3.utils.types import str2bool, str2triple_str, str_or_none
 

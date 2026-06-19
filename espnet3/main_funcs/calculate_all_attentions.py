@@ -23,7 +23,7 @@ from espnet3.legacy.nets.pytorch_backend.rnn.attentions import (
 from espnet3.legacy.nets.pytorch_backend.transformer.attention import (
     MultiHeadedAttention,
 )
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 @torch.no_grad()

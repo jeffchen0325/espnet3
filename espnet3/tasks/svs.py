@@ -33,7 +33,7 @@ from espnet3.models.svs.xiaoice.XiaoiceSing import XiaoiceSing
 # from espnet3.models.svs.mlp_singer.mlp_singer import MLPSinger
 # from espnet3.models.svs.glu_transformer.glu_transformer import GLU_Transformer
 from espnet3.tasks.abs_task import AbsTask
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.preprocessor import SVSPreprocessor

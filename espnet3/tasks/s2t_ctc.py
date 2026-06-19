@@ -48,7 +48,7 @@ from espnet3.models.s2t.espnet_model import ESPnetS2TModel
 from espnet3.tasks.abs_task import AbsTask
 from espnet3.tokenizers.phoneme_tokenizer import g2p_choices
 from espnet3.torch_utils.initialize import initialize
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.train.preprocessor import (

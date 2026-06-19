@@ -13,7 +13,7 @@ from typeguard import typechecked
 from espnet3.utils.yaml_no_alias_safe_dump import yaml_no_alias_safe_dump
 
 if TYPE_CHECKING:
-    from espnet3.train.abs_espnet_model import AbsESPnetModel
+    from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 @contextmanager

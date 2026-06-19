@@ -19,7 +19,7 @@ from espnet3.models.svs.feats_extract.score_feats_extract import (
     SyllableScoreFeats,
     expand_to_frame,
 )
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.models.tts.feats_extract.abs_feats_extract import AbsFeatsExtract
 
 

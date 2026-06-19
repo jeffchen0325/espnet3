@@ -14,7 +14,7 @@ from espnet3.models.spk.loss.abs_loss import AbsLoss
 from espnet3.models.spk.pooling.abs_pooling import AbsPooling
 from espnet3.models.spk.projector.abs_projector import AbsProjector
 from espnet3.torch_utils.device_funcs import force_gatherable
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 
 
 class ESPnetSpeakerModel(AbsESPnetModel):

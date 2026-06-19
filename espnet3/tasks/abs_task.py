@@ -56,7 +56,7 @@ from espnet3.torch_utils.load_pretrained_model import load_pretrained_model
 from espnet3.torch_utils.model_summary import model_summary
 from espnet3.torch_utils.pytorch_version import pytorch_cudnn_version
 from espnet3.torch_utils.set_all_random_seed import set_all_random_seed
-from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.models.abs_espnet_model import AbsESPnetModel
 from espnet3.train.class_choices import ClassChoices
 from espnet3.train.dataset import (
     DATA_TYPES,
