@@ -1,0 +1,28 @@
+[importlinter:contract:infra-no-cross-imports]
+name = rule_0
+type = forbidden
+source_modules =
+    espnet2.fileio
+    espnet2.utils
+    espnet2.torch_utils
+    espnet2.tokenizers
+    espnet2.schedulers
+    espnet2.optimizers
+    espnet2.fst
+forbidden_modules =
+    espnet2.fileio
+    espnet2.utils
+    espnet2.torch_utils
+    espnet2.tokenizers
+    espnet2.schedulers
+    espnet2.optimizers
+    espnet2.fst
+
+[importlinter:contract:macro-architecture]
+name = rule_1
+type = layers
+layers =
+    espnet2.iterators
+    espnet2.samplers
+    espnet2.fileio
+
