@@ -34,7 +34,11 @@ def _pre_hook(
 
 
 def _dim_1_layer_norm(x, eps=1e-05, gamma=None, beta=None):
-    """Functional version of Dim1LayerNorm."""
+    """Local copy of dim_1_layer_norm to avoid reverse dependency on frontend.cnn.
+
+    Original source: espnet2/models/asr/frontend/cnn.py
+    Functional LayerNorm on dim=1 for (B, D, T) tensors without transposing.
+    """
 
     B, D, T = x.shape
     mean = torch.mean(x, 1, keepdim=True)
