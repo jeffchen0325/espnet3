@@ -13,7 +13,7 @@ import yaml
 from typeguard import typechecked
 
 from espnet3.fileio.datadir_writer import DatadirWriter
-from espnet3.fst.lm_rescore import nbest_am_lm_scores
+from espnet3.utils.k2_utils import nbest_am_lm_scores
 from espnet3.legacy.utils.cli_utils import get_commandline_args
 from espnet3.tasks.asr import ASRTask
 from espnet3.tasks.lm import LMTask
