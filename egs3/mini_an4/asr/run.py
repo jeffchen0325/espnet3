@@ -1,5 +1,5 @@
 import sys
-from TEMPLATE.asr.run import main
+from tasks.asr.main import main
 from espnet3.systems.asr.system import ASRSystem
 
 if __name__ == "__main__":
