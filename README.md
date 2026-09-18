@@ -15,10 +15,15 @@ Espnet3
 本项目准备内嵌 espnet_model_zoo 和 espnet-tts-frontend 简洁包依赖（ongoing）。
 
 本项目目标文件结构如下：
+
 Espnet
+
 ├── egs/			# 各种数据集及相关模式的实战用例
+
 ├── espnet/			# 所有模式的底层实现
+
 ├── tasks/			# 每种模式实战的操作流程
+
 └── tools/			# 工具
 
 ## 安装
