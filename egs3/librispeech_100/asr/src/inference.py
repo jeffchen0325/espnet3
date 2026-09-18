@@ -1,4 +1,4 @@
-"""Inference output helpers for ASR recipes."""
+"""Inference output helpers for LibriSpeech ASR recipes."""
 
 
 def build_output(data, model_output, idx):
@@ -12,17 +12,5 @@ def build_output(data, model_output, idx):
         return [build_output(d, o, i) for d, o, i in zip(data, model_output, idx)]
     utt_id = data.get("utt_id", str(idx))
     hyp = model_output[0][0]
-    ref = data.get("text", "")
-    return {"utt_id": utt_id, "hyp": hyp, "ref": ref}
-
-
-def build_output_transducer(data, model_output, idx):
-    """Build the output dict(s) for transducer models; batched like `build_output`."""
-    if isinstance(data, list):
-        return [
-            build_output_transducer(d, o, i) for d, o, i in zip(data, model_output, idx)
-        ]
-    utt_id = data.get("utt_id", str(idx))
-    hyp = model_output[0]
     ref = data.get("text", "")
     return {"utt_id": utt_id, "hyp": hyp, "ref": ref}
