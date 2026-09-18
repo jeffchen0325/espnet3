@@ -1,4 +1,4 @@
-espnetx
+Espnet3
 
 独立的 ESPnet3 框架。本项目基于 [ESPnet](https://espnet.github.io/espnet/)，旨在提供一个更轻量、更现代化的语音处理库。
 
@@ -6,7 +6,20 @@ espnetx
 
 本项目从官方 ESPnet 仓库中提取了 `egs3`和`espnet3` 模块，并进行了独立打包。它移除了对旧版本代码的依赖，专注于提供简洁、高效的语音识别（ASR）、语音合成（TTS）等任务的训练和推理流程。
 
-本项目准备内嵌 espnet_model_zoo 和 espnet-tts-frontend 简洁包依赖（ongoing） 。
+本项目以 pytorch lighning 为核心，外部封装独立的数据处理。
+
+本项目采用 yaml + omegaConf + hydra 进行配置（包括但不限于 LM， LDM， Trainer， Callbacks 等）。
+
+本项目命令行工具使用 omegaConf。
+
+本项目准备内嵌 espnet_model_zoo 和 espnet-tts-frontend 简洁包依赖（ongoing）。
+
+本项目目标文件结构如下：
+Espnet
+├── egs/			# 各种数据集及相关模式的实战用例
+├── espnet/			# 所有模式的底层实现
+├── tasks/			# 每种模式实战的操作流程
+└── tools/			# 工具
 
 ## 安装
 
